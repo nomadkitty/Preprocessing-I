@@ -1,1 +1,322 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+header nav {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+header nav a {
+  margin: 1rem;
+  text-decoration: none;
+  color: #4e4c4c;
+}
+@media (max-width: 500px) {
+  header nav a {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+.backbox {
+  background: lightgrey;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .backbox {
+    font-size: 2rem;
+    align-items: center;
+  }
+}
+.backbox img {
+  width: 30%;
+  margin: 2rem 1rem;
+}
+@media (max-width: 500px) {
+  .backbox img {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.backbox h3 {
+  margin: 0.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #4e4c4c;
+  border-bottom-width: 90%;
+}
+@media (max-width: 500px) {
+  .backbox h3 {
+    font-size: 2.5rem;
+  }
+}
+.backbox button {
+  width: 15rem;
+  height: 4rem;
+  color: white;
+  font-size: 1.5rem;
+  bacground: none;
+  background: #4e4c4c;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+@media (max-width: 500px) {
+  .backbox button {
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+}
+section#Skills {
+  display: flex;
+}
+@media (max-width: 500px) {
+  section#Skills {
+    display: flex;
+    flex-direction: column;
+  }
+}
+section#Skills div {
+  width: 50%;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  section#Skills div {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+section#Skills td {
+  border: 1px solid lightgrey;
+  text-align: left;
+  padding: 8px;
+}
+@media (max-width: 500px) {
+  section#Skills td {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+.t-history td,
+.t-history th {
+  text-align: left;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 8px;
+}
+@media (max-width: 500px) {
+  .t-history td,
+  .t-history th {
+    font-size: 2rem;
+  }
+}
+.t-history tr:nth-child(even) {
+  background: lightgrey;
+}
+#contact {
+  margin: 2rem 0;
+}
+#contact h4 {
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  #contact {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+footer {
+  background: #4e4c4c;
+  color: white;
+  text-align: center;
+  height: 5rem;
+  padding: 2.5rem;
+  border-radius: 5px;
+}
